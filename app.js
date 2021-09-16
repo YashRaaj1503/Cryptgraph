@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 hbs.registerPartials(partials_path);
 
 app.get('/', (req, res) => {
-    res.status(200).render('index.html');
+    res.status(200).render('index.hbs');
 });
 
 app.listen(port, () => {
