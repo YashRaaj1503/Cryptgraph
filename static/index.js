@@ -60,7 +60,7 @@ function decrypt() {
                 break;
             }
         }
-        e = (p - k) % s.length;
+        e = (p - k + s.length) % s.length;
         if(e<0){
             string += '�';
         }
