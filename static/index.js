@@ -73,13 +73,14 @@ function decrypt() {
 
 function show(){
     if(document.getElementById('encrypt').checked){
-        document.getElementsByClassName('et1').placeholder = 'Enter the Cipher Text'
+        document.getElementById('et1').placeholder = 'Enter the Cipher Text';
         document.getElementById('demo').placeholder = 'Cipher Text';
         document.getElementById('text').innerHTML = 'Password';
         document.getElementById('dbutton').style.display = 'none';
         document.getElementById('ebutton').style.display = 'block';
     }
     else if(document.getElementById('decrypt').checked){
+        document.getElementById('et1').placeholder = 'Enter the Password';
         document.getElementById('demo').placeholder = 'Password';
         document.getElementById('text').innerHTML = 'Cipher Text';
         document.getElementById('ebutton').style.display = 'none';
