@@ -28,11 +28,9 @@
     </div>
 
     <div class="form">
-        <div class="gandmra">
+        <div class="content">
             <p><strong>Cryptography is the process of converting between readable text, called plaintext, and an unreadable
-                form, called ciphertext.<br><br>The conversion involves a sequence of mathematical operations that
-                change the appearance of the message during transmission but do not affect the content. Cryptographic
-                techniques can ensure confidentiality and protect messages against unauthorized viewing (eavesdropping),</strong></p>
+                form, called ciphertext.<br><br></strong></p>
         </div>
         <div class="a">
             <input type="radio" onclick="show()" name="button" id="encrypt" checked>Encrypt&nbsp;&nbsp;&nbsp;&nbsp;
@@ -41,12 +39,12 @@
         <div class="b">
             <form id="form">
                 <p>
-                <h5>String</h5>
-                <input class="et1" type="text" placeholder="Enter Text" name="str" autocomplete="off">
+                <h5 id="text">Password</h5>
+                <input class="et1" type="text" placeholder="Enter the Password" name="str" autocomplete="off">
                 </p>
                 <p>
                 <h5>Key</h5>
-                <input class="et1" type="text" placeholder="Enter Key" name="keyword" autocomplete="off">
+                <input class="et1" type="text" placeholder="Enter the Key" name="keyword" autocomplete="off">
                 </p>
             </form>
         </div>
@@ -57,7 +55,7 @@
             <div id="dbutton">
                 <button onclick="decrypt()">Try it</button>
             </div>
-            <input class="et1" id="demo" placeholder="Output" type="text" name="string" readonly>
+            <input class="et1" id="demo" placeholder="Cipher Text" type="text" name="string" readonly>
         </div>
     </div>
 
